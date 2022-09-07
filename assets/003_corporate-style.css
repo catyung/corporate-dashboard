@@ -16,7 +16,7 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 html {
   font-family: "Dosis" !important;
-  background: rgb(57, 81, 85);
+  background: rgb(255, 255, 255);
   background-repeat: no-repeat !important;
   background-size: cover !important;
   width: 100% !important;
@@ -97,7 +97,7 @@ https://github.com/plotly/dash-core-components/blob/557d2fd4987c437265d220f71ee6
 /* Dash Table
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 tr:hover {
-  background-color: rgb(41, 56, 55) !important;
+  background-color: rgb(44, 41, 56) !important;
 }
 
 /* Img
@@ -127,3 +127,5 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-weight: 300;
 }
+
+

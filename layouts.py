@@ -18,12 +18,12 @@ from app import app
 corporate_colors = {
     'dark-blue-grey' : 'rgb(62, 64, 76)',
     'medium-blue-grey' : 'rgb(77, 79, 91)',
-    'superdark-green' : 'rgb(41, 56, 55)',
-    'dark-green' : 'rgb(57, 81, 85)',
-    'medium-green' : 'rgb(93, 113, 120)',
-    'light-green' : 'rgb(186, 218, 212)',
-    'pink-red' : 'rgb(255, 101, 131)',
-    'dark-pink-red' : 'rgb(247, 80, 99)',
+    'superdark-green' : 'rgb(0, 39,69)',
+    'dark-green' : '#4C9CBF',
+    'medium-green' : '#34A6D7',
+    'light-green' : '#dbedff',
+    'pink-red' : 'rgb(251, 251, 252)',
+    'dark-pink-red' : 'rgb(251, 251, 252)',
     'white' : 'rgb(251, 251, 252)',
     'light-grey' : 'rgb(208, 206, 206)'
 }
@@ -39,7 +39,7 @@ externalgraph_colstyling = {
     'border-width' : '1px',
     'border-color' : corporate_colors['superdark-green'],
     'background-color' : corporate_colors['superdark-green'],
-    'box-shadow' : '0px 0px 17px 0px rgba(186, 218, 212, .5)',
+    #'box-shadow' : '0px 0px 17px 0px rgba(186, 218, 212, .5)',
     'padding-top' : '10px'
 }
 
@@ -49,12 +49,12 @@ filterdiv_borderstyling = {
     'border-width' : '1px',
     'border-color' : corporate_colors['light-green'],
     'background-color' : corporate_colors['light-green'],
-    'box-shadow' : '2px 5px 5px 1px rgba(255, 101, 131, .5)'
+    #'box-shadow' : '2px 5px 5px 1px rgba(255, 101, 131, .5)'
     }
 
 navbarcurrentpage = {
     'text-decoration' : 'underline',
-    'text-decoration-color' : corporate_colors['pink-red'],
+    'text-decoration-color' : corporate_colors['white'],
     'text-shadow': '0px 0px 1px rgb(251, 251, 252)'
     }
 
@@ -216,7 +216,7 @@ def get_header():
         html.Div([], className = 'col-2'), #Same as img width, allowing to have the title centrally aligned
 
         html.Div([
-            html.H1(children='Performance Dashboard',
+            html.H1(children='Super Cat Performance Dashboard',
                     style = {'textAlign' : 'center'}
             )],
             className='col-8',
@@ -280,8 +280,8 @@ def get_navbar(p = 'sales'):
 
     ],
     className = 'row',
-    style = {'background-color' : corporate_colors['dark-green'],
-            'box-shadow': '2px 5px 5px 1px rgba(255, 101, 131, .5)'}
+    style = {'background-color' : corporate_colors['dark-green']}
+            #'box-shadow': '2px 5px 5px 1px rgba(255, 101, 131, .5)'}
     )
 
     navbar_page2 = html.Div([
@@ -317,8 +317,8 @@ def get_navbar(p = 'sales'):
 
     ],
     className = 'row',
-    style = {'background-color' : corporate_colors['dark-green'],
-            'box-shadow': '2px 5px 5px 1px rgba(255, 101, 131, .5)'}
+    style = {'background-color' : corporate_colors['dark-green']}
+            #'box-shadow': '2px 5px 5px 1px rgba(255, 101, 131, .5)'}
     )
 
     navbar_page3 = html.Div([
@@ -354,8 +354,8 @@ def get_navbar(p = 'sales'):
 
     ],
     className = 'row',
-    style = {'background-color' : corporate_colors['dark-green'],
-            'box-shadow': '2px 5px 5px 1px rgba(255, 101, 131, .5)'}
+    style = {'background-color' : corporate_colors['dark-green']}
+            #'box-shadow': '2px 5px 5px 1px rgba(255, 101, 131, .5)'}
     )
 
     if p == 'sales':
@@ -654,6 +654,7 @@ page2 = html.Div([
 ####################################################################################################
 # 003 - Page 3
 ####################################################################################################
+
 
 page3 = html.Div([
 

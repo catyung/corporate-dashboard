@@ -18,12 +18,12 @@ from app import app
 corporate_colors = {
     'dark-blue-grey' : 'rgb(62, 64, 76)',
     'medium-blue-grey' : 'rgb(77, 79, 91)',
-    'superdark-green' : 'rgb(41, 56, 55)',
-    'dark-green' : 'rgb(57, 81, 85)',
-    'medium-green' : 'rgb(93, 113, 120)',
-    'light-green' : 'rgb(186, 218, 212)',
-    'pink-red' : 'rgb(255, 101, 131)',
-    'dark-pink-red' : 'rgb(247, 80, 99)',
+    'superdark-green' : 'rgb(0, 39,69)',
+    'dark-green' : '#4C9CBF',
+    'medium-green' : '#34A6D7',
+    'light-green' : '#dbedff',
+    'pink-red' : 'rgb(251, 251, 252)',
+    'dark-pink-red' : 'rgb(251, 251, 252)',
     'white' : 'rgb(251, 251, 252)',
     'light-grey' : 'rgb(208, 206, 206)'
 }
